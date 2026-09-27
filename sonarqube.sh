@@ -1,8 +1,8 @@
 #! /bin/bash
 cd /opt/
 set -e  #If any command fails, immediately stop the script
-
-curl -fL -A "Mozilla/5.0" \    #Sets the HTTP User-Agent to look like a normal browser
+#Sets the HTTP User-Agent to look like a normal browser
+curl -fL -A "Mozilla/5.0" \    
 -o /opt/sonarqube-26.9.0.129388.zip \
 "https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-26.9.0.129388.zip"
 cd /opt
